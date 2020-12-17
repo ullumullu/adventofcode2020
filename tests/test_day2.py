@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-from challenges.day2 import validate_passwords_frequency, validate_passwords_position
 from typing import List
+from challenges.day2 import validate_passwords_frequency, validate_passwords_position
 
 
 def _read_input() -> List[str]:

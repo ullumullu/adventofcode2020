@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-from challenges.day3 import frequency_character
 from typing import List
+from challenges.day3 import frequency_character
 
 
 def _read_input() -> List[str]:
@@ -17,7 +17,8 @@ def _read_input() -> List[str]:
 
 def test_sample_input_part1():
     sample_input = ["..##.......", "#...#...#..", ".#....#..#.", "..#.#...#.#", ".#...##..#.",
-                    "..#.##.....", ".#.#.#....#", ".#........#", "#.##...#...", "#...##....#", ".#..#...#.#"]
+                    "..#.##.....", ".#.#.#....#", ".#........#", "#.##...#...", "#...##....#",
+                    ".#..#...#.#"]
     expected_trees_hit = 7
     hit_trees = frequency_character(
         sample_input, right=3, down=1, char="#")
@@ -34,7 +35,8 @@ def test_puzzle_input_part1():
 
 def test_sample_input_part2():
     sample_input = ["..##.......", "#...#...#..", ".#....#..#.", "..#.#...#.#", ".#...##..#.",
-                    "..#.##.....", ".#.#.#....#", ".#........#", "#.##...#...", "#...##....#", ".#..#...#.#"]
+                    "..#.##.....", ".#.#.#....#", ".#........#", "#.##...#...", "#...##....#",
+                    ".#..#...#.#"]
     expected_trees_multiplier = 336
 
     # right, down, expected

@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-from challenges.day1 import find_entries
 from typing import List
+from challenges.day1 import find_entries
 
 
 def _read_input() -> List[int]:
