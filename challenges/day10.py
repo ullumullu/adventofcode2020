@@ -1,3 +1,17 @@
+""" --- Day 10: Adapter Array ---
+
+Part 1:
+Find a chain that uses all of your adapters to connect the charging
+outlet to your device's built-in adapter and count the joltage
+differences between the charging outlet, the adapters, and your device.
+What is the number of 1-jolt differences multiplied by the number
+of 3-jolt differences?
+
+Part 2:
+What is the total number of distinct ways you can arrange the adapters
+to connect the charging outlet to your device?
+"""
+
 from collections import Counter
 from typing import List
 

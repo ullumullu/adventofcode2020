@@ -1,3 +1,14 @@
+""" --- Day 13: Shuttle Search ---
+
+Part 1:
+To save time once you arrive, your goal is to figure out the earliest bus
+you can take to the airport. (There will be exactly one such bus.)
+
+Part 2:
+What is the earliest timestamp such that all of the listed bus IDs depart
+at offsets matching their positions in the list?
+"""
+
 import math
 from typing import List, Tuple
 

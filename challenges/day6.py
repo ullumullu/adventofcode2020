@@ -1,3 +1,14 @@
+""" --- Day 6: Custom Customs ---
+
+Part 1:
+For each group, count the number of questions to which anyone
+answered "yes". What is the sum of those counts?
+
+Part 2:
+For each group, count the number of questions to which everyone
+answered "yes". What is the sum of those counts?
+"""
+
 from typing import List
 
 

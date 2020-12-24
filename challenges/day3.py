@@ -1,3 +1,14 @@
+""" --- Day 3: Toboggan Trajectory ---
+
+Part 1:
+Starting at the top-left corner of your map and following a slope of
+right 3 and down 1, how many trees would you encounter?
+
+Part 2:
+What do you get if you multiply together the number of trees encountered
+on each of the listed slopes?
+"""
+
 from typing import List
 
 

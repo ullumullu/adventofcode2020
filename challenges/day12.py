@@ -1,3 +1,13 @@
+""" --- Day 12: Rain Risk ---
+
+Part 1:
+Figure out where the navigation instructions lead. What is the
+Manhattan distance between that location and the ship's starting position?
+Part 2:
+Figure out where the navigation instructions actually lead. What is the
+Manhattan distance between that location and the ship's starting position?
+"""
+
 from typing import Tuple, List, Dict
 
 # Action N means to move north by the given value

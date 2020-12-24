@@ -1,3 +1,15 @@
+""" --- Day 4: Passport Processing ---
+
+Part 1:
+Count the number of valid passports - those that have all required fields.
+Treat cid as optional. In your batch file, how many passports are valid?
+
+Part 2:
+Count the number of valid passports - those that have all required fields
+and valid values. Continue to treat cid as optional. In your batch file,
+how many passports are valid?
+"""
+
 import re
 from typing import List
 

@@ -1,7 +1,14 @@
+""" --- Day 2: Password Philosophy ---
+
+Part 1:
+How many passwords are valid according to their policies?
+
+Part 2:
+How many passwords are valid according to the new interpretation
+of the policies?
+"""
 
 from typing import List, Tuple
-
-# --- Day 2: Password Philosophy ---
 
 
 def _parse_input(password_set: str) -> Tuple[str, str, int, int]:

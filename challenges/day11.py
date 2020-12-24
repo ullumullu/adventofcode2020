@@ -1,3 +1,14 @@
+""" --- Day 11: Seating System ---
+
+Part 1:
+Simulate your seating area by applying the seating rules repeatedly until
+no seats change state. How many seats end up occupied?
+
+Part 2:
+Given the new visibility method and the rule change for occupied seats
+becoming empty, once equilibrium is reached, how many seats end up occupied?
+"""
+
 from functools import cache
 from copy import deepcopy
 from typing import List, Tuple, Callable

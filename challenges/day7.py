@@ -1,3 +1,14 @@
+""" --- Day 7: Handy Haversacks ---
+
+Part 1:
+How many bag colors can eventually contain
+at least one shiny gold bag? (The list of rules
+is quite long; make sure you get all of it.)
+
+Part 2:
+How many individual bags are required inside your single shiny gold bag?
+"""
+
 from typing import Dict, List
 
 
