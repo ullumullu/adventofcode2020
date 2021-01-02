@@ -5,8 +5,8 @@ from challenges.day10 import jolt_difference, jolt_options
 
 
 def _read_input(filename: str) -> List[int]:
-    """Read the input file. For now this ignores elements that appear
-    more than once and other special cases."""
+    """Read the input file.
+    """
     joltage_data = []
     current_path = Path(os.path.dirname(os.path.realpath(__file__)))
     image_path = current_path / "resources" / filename

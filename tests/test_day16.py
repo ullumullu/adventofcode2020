@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from typing import List, Dict, Any, Tuple
+from typing import List, Tuple
 from challenges.day16 import Rules, part1, part2
 
 

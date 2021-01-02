@@ -5,8 +5,8 @@ from challenges.day8 import execute_instructions
 
 
 def _read_input(filename: str) -> List[Tuple[str, int]]:
-    """Read the input file. For now this ignores elements that appear
-    more than once and other special cases."""
+    """Read the input file.
+    """
     instructions = []
     current_path = Path(os.path.dirname(os.path.realpath(__file__)))
     image_path = current_path / "resources" / filename

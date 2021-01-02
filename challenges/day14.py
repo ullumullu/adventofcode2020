@@ -9,7 +9,7 @@ Execute the initialization program using an emulator for a version 2 decoder
 chip. What is the sum of all values left in memory after it completes?
 """
 
-from typing import Callable, List, Tuple
+from typing import List, Tuple
 
 # Indicator in the instruction set that this instruction is a new mask
 INDICATOR_MASK = -1

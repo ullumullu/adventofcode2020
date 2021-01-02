@@ -10,20 +10,17 @@ Part 2:
 Given your starting numbers, what will be the 30000000th number spoken?
 """
 
-from functools import reduce
-import operator
-from collections import deque, defaultdict
 from typing import List
 
 
-def part1_2(input: List[int], turns: int) -> int:
+def part1_2(input_numbers: List[int], turns: int) -> int:
     last_number = 0
-    numbers = {ele: indx+1 for indx, ele in enumerate(input)}
-    last_number = input[-1]
+    numbers = {ele: indx+1 for indx, ele in enumerate(input_numbers)}
+    last_number = input_numbers[-1]
 
-    for turn in range(len(input)+1, turns+1):
+    for turn in range(len(input_numbers) + 1, turns + 1):
         last = numbers.get(last_number, 0)
         numbers[last_number] = (turn-1)
-        last_number = 0 if last == 0 else (turn-1) - last
+        last_number = 0 if last == 0 else (turn - 1) - last
 
     return last_number

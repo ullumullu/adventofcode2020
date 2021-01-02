@@ -8,7 +8,7 @@ Figure out where the navigation instructions actually lead. What is the
 Manhattan distance between that location and the ship's starting position?
 """
 
-from typing import Tuple, List, Dict
+from typing import Tuple, List
 
 # Action N means to move north by the given value
 ACTION_N = "N"
@@ -65,9 +65,9 @@ def rotate_dir(operation: str, argument: int, curr_dir: int, len_directions: int
     return new_dir
 
 
-def rotate_wp(operation: str, argument: int, wp: List[int], len_directions: int) -> List[int]:
+def rotate_wp(operation: str, argument: int, waypoint: List[int]) -> List[int]:
     """Rotate the waypoints based on the amount of degrees given."""
-    rotated_wp = compact(wp)
+    rotated_wp = compact(waypoint)
     if operation == ACTION_L:
         dir_shift = int(argument / 90)
         for _ in range(dir_shift):
@@ -123,7 +123,7 @@ def execution(wp_north: int = 0, wp_east: int = 0, wp_south: int = 0, wp_west: i
         operation, argument = parse_instr(instruction)
         if with_wp:
             context["wp"] = rotate_wp(operation, argument,
-                                      context["wp"], len(directions))
+                                      context["wp"])
             context["wp"] = [curr_wp + move_wp
                              for curr_wp, move_wp in zip(context["wp"], move(operation, argument))]
 
@@ -145,7 +145,8 @@ def execution(wp_north: int = 0, wp_east: int = 0, wp_south: int = 0, wp_west: i
             operation = directions[context["dir"]]
 
         context["pos"] = list(curr_pos + move_pos
-                              for curr_pos, move_pos in zip(context["pos"], move(operation, argument)))
+                              for curr_pos, move_pos
+                              in zip(context["pos"], move(operation, argument)))
         # Return current position
         return context["pos"]
 

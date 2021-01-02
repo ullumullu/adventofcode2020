@@ -12,9 +12,8 @@ the sixth cycle?
 
 from collections import defaultdict
 from functools import cache
-from copy import deepcopy
 from itertools import product
-from typing import Sequence, List, Tuple, Mapping, Any
+from typing import Sequence, List, Tuple, Mapping
 
 Cube = Tuple[int, ...]
 Cubes = Mapping[Cube, str]

@@ -69,4 +69,6 @@ def part2(rules: Rules, your_ticket: Ticket, nearby_tickets: Sequence[Ticket]) -
             if indx not in mapping:
                 rows[indx] = rows[indx].difference(set(mapping.values()))
 
-    return math.prod([your_ticket[key] for key, value in mapping.items() if value.startswith("departure")])
+    return math.prod([your_ticket[key]
+                      for key, value in mapping.items()
+                      if value.startswith("departure")])
