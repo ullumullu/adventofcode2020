@@ -14,7 +14,7 @@ def _read_input(filename: str) -> List[str]:
     image_path = current_path / "resources" / filename
     with image_path.open("r", encoding="utf-8") as input_file:
         ele = {}
-        for line in input_file.readlines():
+        for line in input_file:
             # New line signal for new passport
             if line == "\n":
                 passports.append(ele)

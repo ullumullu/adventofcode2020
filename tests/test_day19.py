@@ -12,7 +12,7 @@ def _read_input(filename: str) -> Tuple[List[str], List[str]]:
     resource_path = current_path / "resources" / filename
     read_rules = True
     with resource_path.open("r", encoding="utf-8") as input_file:
-        for line in input_file.readlines():
+        for line in input_file:
             if line == "\n":
                 read_rules = False
             elif read_rules:

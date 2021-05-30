@@ -11,7 +11,7 @@ def _read_input(filename: str) -> List[str]:
     current_path = Path(os.path.dirname(os.path.realpath(__file__)))
     resource_path = current_path / "resources" / filename
     with resource_path.open("r", encoding="utf-8") as input_file:
-        for line in input_file.readlines():
+        for line in input_file:
             calcuations.append(line.strip())
     return calcuations
 

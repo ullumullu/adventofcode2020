@@ -15,7 +15,7 @@ def _read_input(filename: str) -> Tuple[Rules, List[int], List[List[int]]]:
 
     curr_section = 1
     with resource_path.open("r", encoding="utf-8") as input_file:
-        for line in input_file.readlines():
+        for line in input_file:
             if line == "\n":
                 curr_section += 1
                 continue

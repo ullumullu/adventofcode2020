@@ -11,7 +11,7 @@ def _read_input(filename: str) -> List[int]:
     current_path = Path(os.path.dirname(os.path.realpath(__file__)))
     image_path = current_path / "resources" / filename
     with image_path.open("r", encoding="utf-8") as input_file:
-        for line in input_file.readlines():
+        for line in input_file:
             joltage_data.append(int(line.strip()))
     return joltage_data
 

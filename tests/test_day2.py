@@ -10,7 +10,7 @@ def _read_input() -> List[str]:
     current_path = Path(os.path.dirname(os.path.realpath(__file__)))
     image_path = current_path / "resources" / "day2_puzzle_input.txt"
     with image_path.open("r", encoding="utf-8") as input_file:
-        for line in input_file.readlines():
+        for line in input_file:
             password_list.append(str(line.strip()))
     return password_list
 
